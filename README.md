@@ -78,10 +78,10 @@ The results are stored in gold_sales_summary.
 
 The notebook nb_build_tables creates the following tables and assigns surrogate keys to the dimension records:
 
-dim_product – *Stores product details.*  
-dim_customer – *Stores customer details.*  
-dim_region – *Stores region details.*  
-fact_sales – *Stores sales data and related dimension keys.*  
+dim_product  → *Stores product details.*  
+dim_customer → *Stores customer details.*  
+dim_region   → *Stores region details.*  
+fact_sales   → *Stores sales data and related dimension keys.*  
 
 **Purpose:** *Organise sales data into a dimensional model for reporting.*
 
@@ -118,9 +118,30 @@ The model defines the relationships between tables, creates measures for busines
 
 A Power BI report named Sales Report was created using the Sales Semantic model.
 The report uses Direct Lake to access data through the semantic model and display sales information in interactive visuals.
-These visuals help users analyse revenue, sales trends, product categories, and regional performance.
 
-**Purpose:** *Present sales insights in an interactive format to support business analysis and decision-making.*
+**Key Performance Indicators (KPIs)**  
+
+The following KPIs were created to track overall sales performance:
+
+- **Total Revenue** → *Total sales revenue.*
+- **Total Revenue (USD)** → *Revenue converted into USD.*
+- **Total Orders** → *Total number of orders.*
+- **Total Quantity Sold** → *Total quantity of products sold.*
+- **Avg Revenue per Order** → *Average revenue generated per order.*
+- **Avg Quantity per Order** → *Average quantity sold per order.*
+
+**Business Questions**  
+
+The report helps answer the following business questions:
+
+- *What is the total revenue generated, including revenue in USD?*
+- *How do revenue and order volumes change month by month?*
+- *Which product categories generate the highest revenue, orders, and sales quantities?*
+- *Which regions contribute the most to revenue and orders?*
+- *Who are the top 10 customers by revenue?*
+- *What is the average revenue and quantity per order?*
+
+**Purpose:** *Provide an interactive view of sales performance across time, product categories, regions, and customers to support business analysis and decision-making.*
 
 ## Medallion Architecture
 
